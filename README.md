@@ -15,14 +15,6 @@ The **date** in the folders name represents when they were last changed.
 
 ## The Code
 
-The code I have chosen to include are the classes that have something to show. While some of these projects contain
-many more code-files, they are such small and simple files that it would be unnecessary to show them of. 
-The code that I did not include fell under one or more of these criteria:
-   * Was the code either not written by me or heavily influenced by other peoples code?
-   * Is the only thing in the file a class or struct used to store data?
-   * Does the file exist purely to test if something else works?
-   * If it is a unity project: is it a scriptable object file?
-
 As this code was meant to be seen primarily by me, there are very few (if any) comments, 
 expecially in some of the older projects. The reason for this is that I recognise my own work and can, if needed,
 work with some older projects after a short transition period.
