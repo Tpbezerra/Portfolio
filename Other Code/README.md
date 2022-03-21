@@ -108,7 +108,7 @@ modifier has checked it and the modifier will only check if it has a newly writt
 
 These rules are enforced by the use of a **Monitor**.
 
-<img src="Multithreading Example 4 - Text Replacer (May - 2021)/Multithreaded Example 4 Display.png" width="480"/>
+<img src="Multithreading Example 4 - Text Replacer (May - 2021)/Multithreaded Example 4 Display.png" width="640"/>
 
 ## Person Registry (Sep - 2021)
 
