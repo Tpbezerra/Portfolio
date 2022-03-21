@@ -39,7 +39,7 @@ Finally it would bounce through again, this time picking up letters as it went a
 word. There was also letter replacement, each letter in the word would be replaced by the corresponding letter in 
 a replacement alphabet.
 
-![](/Encryption Program (Sep - 2019)/Encryption Display.png)
+![](Portfolio/Other Code/Encryption Program (Sep - 2019)/Encryption Display.png)
 
 Following the red line from the **T** shows the path that the word would take. The coded word would then be composed 
 of each letter in the order it arrived at them, starting from the top-left moving right and down. In this case the 
