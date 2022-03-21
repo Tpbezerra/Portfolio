@@ -14,6 +14,8 @@ numbers.
 A program that allows to users to connect to one-another over an internet connection and send messages using a 
 windows-forms application.
 
+<img src="Chat Box (Nov - 2019)/Chat Box Display.png" width="256"/>
+
 ## Connection - Client Test (Nov - 2019)
 
 A program to test client connection and a lead up to the **Chat Box** program.
@@ -55,26 +57,42 @@ input the required parameters **(mass, velocity, height)** and recieve the resul
 Small windows-forms program that gives the electromagnetic force between two charged particles given the charge of 
 each and the distance between them.
 
+<img src="Force Calculator Particles (Nov - 2018)/Particle Force Display.png" width="256"/>
+
 ## Multithreading Example 1 - Music-Drawing (Jun - 2021)
+
+**DISCLOSER**: The Windows-Forms UI was not made by me.
 
 This was the first multithreading assignment. We were tasked with creating a program that could draw text that 
 teleported around a panel, draw a spinning triangle, and play music. Each on its own thread.
 
+<img src="Multithreading Example 1 - Music-Drawing (Jun - 2021)/Multithreaded Example 1 Display.png" width="256"/>
+
 ## Multithreading Example 2 - String Transfer (Apr - 2021)
+
+**DISCLOSER**: The Windows-Forms UI was not made by me.
 
 The second multithreading assignment was to create a program that could write and read a string on two separate 
 threads. We synced the two threads so that the reader could only read once the writer had written something new, 
 and the writer would only write when the reader had finished reading. To compare, there is an option to do it 
 without sync.
 
+<img src="Multithreading Example 2 - String Transfer (Apr - 2021)/Multithreaded Example 2 Display.png" width="256"/>
+
 ## Multithreading Example 3 - Producer-Consumer (May- 2021)
+
+**DISCLOSER**: The Windows-Forms UI was not made by me.
 
 This third assignment was to create a program where producers were producing different items (the examples are 
 foodstuffs) and placing them in storage. At the same time consumers were taking the produced items out of storage. 
 Each producer and each consumer was to run on its own thread and they use semaphores to sync up the placement, 
 respectively removal, of items.
 
+<img src="Multithreading Example 3 - Producer-Consumer (May- 2021)/Multithreaded Example 3 Display.png" width="256"/>
+
 ## Multithreading Example 4 - Text Replacer (May - 2021)
+
+**DISCLOSER**: The Windows-Forms UI was not made by me.
 
 The fourth multithreading assignment was to read the text from a file and replace specific words with other words. 
 This was to be done by using a buffer that would fill with each of the words from the original file. There would 
@@ -90,9 +108,11 @@ modifier has checked it and the modifier will only check if it has a newly writt
 
 These rules are enforced by the use of a **Monitor**.
 
+<img src="Multithreading Example 4 - Text Replacer (May - 2021)/Multithreaded Example 4 Display.png" width="256"/>
+
 ## Person Registry (Sep - 2021)
 
-DISCLOSER: The **Main.cpp** file was not written by me.
+**DISCLOSER**: The **Main.cpp** file was not written by me.
 
 This project was to create a registry of people where one could add, remove, search for, empty, and print out 
 the registry.
@@ -141,6 +161,8 @@ the primes up to the input int.
 
 Program that displays the mathematic tables for a few low numbers. Which table is displayed (*, /, +, -) can be 
 changed by the user using a dropdown menu. What number it is applied to can be changed using another dropdown.
+
+<img src="Table Calculator (Oct - 2018)/Table Calculator Display.png" width="256"/>
 
 ## Text Analyser (Oct - 2019)
 
