@@ -3,10 +3,57 @@
 This is the code for some programs that were for school assignments. They represent a variety of uses and were 
 written in 2 different languages: C# and C++. Unless disclosed, all code was written by me.
 
+## Area Calculator (Oct - 2018)
+
+A tiny program where a user can input a few numbers in powershell and get the product of all of them. Alternatively 
+(if the powerShell bool is false) the user can use the standard console interface to retrieve the product of two 
+numbers.
+
+## Chat Box (Nov - 2019)
+
+A program that allows to users to connect to one-another over an internet connection and send messages using a 
+windows-forms application.
+
+## Connection - Client Test (Nov - 2019)
+
+A program to test client connection and a lead up to the **Chat Box** program.
+
+## Connection - Server Test (Nov - 2019)
+
+A program to test server creation and listening leading up to the **Chat Box** program.
+
 ## Decision Tree Example (Nov - 2021)
 
 This is a small code file that serves as a base for any decision tree I would want to implement. It was created as 
 part of an AI course and was then implemented into another bigger project.
+
+## Encryption Program (Sep - 2019)
+
+This was a program made during a programming competition for students all over the world (wherein I came top 50).
+The task for this program was to make an encryption/decryption program where the letters in the input-word would 
+"bounce around" a box. To then get the coded version of the word, the program would go from left to right, top to 
+bottom and create the word out of any letters it passed by. To decode a word, the program would bounce the letters 
+arround like for it did when encrypting. This is to find which positions would be occupied. Then it would place the 
+letters from the coded word in each slot, in the same order as when encrypting (top left to bottom right). 
+Finally it would bounce through again, this time picking up letters as it went along. The result is the decoded 
+word. There was also letter replacement, each letter in the word would be replaced by the corresponding letter in 
+a replacement alphabet.
+
+![Display](Encryption Program (Sep - 2019)/Encryption Display.png)
+
+Following the red line from the **T** shows the path that the word would take. The coded word would then be composed 
+of each letter in the order it arrived at them, starting from the top-left moving right and down. In this case the 
+result would be **"Thsoam"**.
+
+## Force Calculator Kinetic-Potential (Oct - 2018)
+
+Small console program where a user can input what type of force they would want to calculate (kinetic or potential), 
+input the required parameters **(mass, velocity, height)** and recieve the result.
+
+## Force Calculator Particles (Nov - 2018)
+
+Small windows-forms program that gives the electromagnetic force between two charged particles given the charge of 
+each and the distance between them.
 
 ## Multithreading Example 1 - Music-Drawing (Jun - 2021)
 
@@ -88,6 +135,15 @@ This was an assignment to find specific strings in another string (or char[]) an
 The three variants were: substituting strings in another string, substituting characters with string in a C-String, 
 and replacing strings from an input stream. The method "**listPrimes**" is separate and is used to list all of 
 the primes up to the input int.
+
+## Table Calculator (Oct - 2018)
+
+Program that displays the mathematic tables for a few low numbers. Which table is displayed (*, /, +, -) can be 
+changed by the user using a dropdown menu. What number it is applied to can be changed using another dropdown.
+
+## Text Analyser (Oct - 2019)
+
+Opens a file and prints out the amount of lines, words, letters, characters and cases of "the".
 
 ## Txt Code Parser (Oct - 2021)
 
