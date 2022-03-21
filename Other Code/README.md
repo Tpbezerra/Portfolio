@@ -14,7 +14,7 @@ numbers.
 A program that allows to users to connect to one-another over an internet connection and send messages using a 
 windows-forms application.
 
-<img src="Chat Box (Nov - 2019)/Chat Box Display.png" width="256"/>
+<img src="Chat Box (Nov - 2019)/Chat Box Display.png" width="480"/>
 
 ## Connection - Client Test (Nov - 2019)
 
@@ -66,7 +66,7 @@ each and the distance between them.
 This was the first multithreading assignment. We were tasked with creating a program that could draw text that 
 teleported around a panel, draw a spinning triangle, and play music. Each on its own thread.
 
-<img src="Multithreading Example 1 - Music-Drawing (Jun - 2021)/Multithreaded Example 1 Display.png" width="256"/>
+<img src="Multithreading Example 1 - Music-Drawing (Jun - 2021)/Multithreaded Example 1 Display.png" width="480"/>
 
 ## Multithreading Example 2 - String Transfer (Apr - 2021)
 
@@ -77,7 +77,7 @@ threads. We synced the two threads so that the reader could only read once the w
 and the writer would only write when the reader had finished reading. To compare, there is an option to do it 
 without sync.
 
-<img src="Multithreading Example 2 - String Transfer (Apr - 2021)/Multithreaded Example 2 Display.png" width="256"/>
+<img src="Multithreading Example 2 - String Transfer (Apr - 2021)/Multithreaded Example 2 Display.png" width="480"/>
 
 ## Multithreading Example 3 - Producer-Consumer (May- 2021)
 
@@ -88,7 +88,7 @@ foodstuffs) and placing them in storage. At the same time consumers were taking 
 Each producer and each consumer was to run on its own thread and they use semaphores to sync up the placement, 
 respectively removal, of items.
 
-<img src="Multithreading Example 3 - Producer-Consumer (May- 2021)/Multithreaded Example 3 Display.png" width="256"/>
+<img src="Multithreading Example 3 - Producer-Consumer (May- 2021)/Multithreaded Example 3 Display.png" width="480"/>
 
 ## Multithreading Example 4 - Text Replacer (May - 2021)
 
@@ -108,7 +108,7 @@ modifier has checked it and the modifier will only check if it has a newly writt
 
 These rules are enforced by the use of a **Monitor**.
 
-<img src="Multithreading Example 4 - Text Replacer (May - 2021)/Multithreaded Example 4 Display.png" width="256"/>
+<img src="Multithreading Example 4 - Text Replacer (May - 2021)/Multithreaded Example 4 Display.png" width="480"/>
 
 ## Person Registry (Sep - 2021)
 
