@@ -93,6 +93,7 @@ These rules are enforced by the use of a **Monitor**.
 ## Person Registry (Sep - 2021)
 
 DISCLOSER: The **Main.cpp** file was not written by me.
+
 This project was to create a registry of people where one could add, remove, search for, empty, and print out 
 the registry.
 
