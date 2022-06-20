@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
-    public GameObject BulletExplosion;
+    [SerializeField] GameObject BulletExplosion;
 
-    public bool explosive = false;
+    [SerializeField] bool explosive = false;
 
-    public float ExplosiveBulletRadius = 2.5f;
-    public float pushbackForce = 50;
-    public float travelSpeed = 75;
+    [SerializeField] float ExplosiveBulletRadius = 2.5f;
+    [SerializeField] float pushbackForce = 50;
+    [SerializeField] float travelSpeed = 75;
 
     int damage;
 
@@ -31,8 +29,7 @@ public class Projectile : MonoBehaviour {
         float travelDistance = travelSpeed * charge * Time.fixedDeltaTime;
         distanceTraveled += travelDistance;
 
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, travelDistance) && hit.transform.gameObject != owner)
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, travelDistance) && hit.transform.gameObject != owner)
             Collide(hit);
 
         transform.position += transform.forward * travelDistance;
@@ -68,7 +65,7 @@ public class Projectile : MonoBehaviour {
             {
                 hitEntity.TakeDamage(damage);
 
-                addForce = hitEntity.shield <= 0;
+                addForce = hitEntity.GetShield() <= 0;
             }
 
             if (hitRb != null && addForce)
@@ -76,7 +73,7 @@ public class Projectile : MonoBehaviour {
                 if (explosive)
                     forceDirection = (collider.transform.position - hit.point).normalized;
 
-                hitRb.AddForce(forceDirection * pushbackForce * charge, ForceMode.Impulse);
+                hitRb.AddForce(forceDirection * (pushbackForce * charge), ForceMode.Impulse);
             }
         }
 

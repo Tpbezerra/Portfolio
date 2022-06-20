@@ -1,40 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(PlayerAttacking))]
 public class PlayerBulletInventory : MonoBehaviour {
 
-    public Projectile NormalBullet;
-    public Projectile ExplosiveBullet;
+    [SerializeField] Projectile NormalBullet;
+    [SerializeField] Projectile ExplosiveBullet;
 
     PlayerAttacking attacker;
-
-    void Start()
-    {
-        attacker = GetComponent<PlayerAttacking>();
-    }
-
-    void BulletType(string BulletTypes)
-    {
-        if (BulletTypes == "NormalBullet")
-        {
-            attacker.shootingObj = NormalBullet;
-        }
-        else if (BulletTypes == "ExplosiveBullet")
-        {
-            attacker.shootingObj = ExplosiveBullet;
-            Invoke("SetBulletToNormal", 10);
-        }
-        else
-        {
-            Debug.LogError("ERROR! More than one bullet selected");
-        }
-    }
-    private void SetBulletToNormal()
-    {
-        attacker.shootingObj = NormalBullet;
-    }
 
     public void SetBulletType(string BulletName)
     {
@@ -46,5 +18,32 @@ public class PlayerBulletInventory : MonoBehaviour {
         {
             BulletType("ExplosiveBullet");
         }
+    }
+
+    void Start()
+    {
+        attacker = GetComponent<PlayerAttacking>();
+    }
+
+    void BulletType(string bulletName)
+    {
+        if (bulletName == "NormalBullet")
+        {
+            attacker.SetShootingObject(NormalBullet);
+        }
+        else if (bulletName == "ExplosiveBullet")
+        {
+            attacker.SetShootingObject(ExplosiveBullet);
+            Invoke(nameof(ResetBullet), 10);
+        }
+        else
+        {
+            Debug.LogError("Invalid bullet name!");
+        }
+    }
+
+    void ResetBullet()
+    {
+        attacker.SetShootingObject(NormalBullet);
     }
 }

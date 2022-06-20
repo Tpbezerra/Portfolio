@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Pickup : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collider)
     {
-        if (collider.transform.GetComponent<PlayerBulletInventory>())
+        PlayerBulletInventory inventory;
+        if ((inventory = collider.transform.GetComponent<PlayerBulletInventory>()) != null)
         {
-            collider.transform.GetComponent<PlayerBulletInventory>().SetBulletType("ExplosiveBullet");
+            inventory.SetBulletType("ExplosiveBullet");
 
             Destroy(gameObject);
         }

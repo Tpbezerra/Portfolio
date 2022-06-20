@@ -3,19 +3,24 @@
 [RequireComponent(typeof(PlayerController))]
 public class PlayerAttacking : MonoBehaviour
 {
-    public Projectile shootingObj;
-    public Transform gun;
-    public Transform muzzle;
+    [SerializeField] Projectile shootingObj;
+    [SerializeField] Transform gun;
+    [SerializeField] Transform muzzle;
 
-    public float aimSpeed = 20;
-    public float fireRate = 1.3f;
-    public int damage = 20;
+    [SerializeField] float aimSpeed = 20;
+    [SerializeField] float fireRate = 1.3f;
+    [SerializeField] int damage = 20;
 
     float aimAngle;
     float currentCharge;
     float timeToAttack;
 
     Projectile spawnedProjectile;
+
+    public void SetShootingObject(Projectile value)
+    {
+        shootingObj = value;
+    }
 
     void Update()
     {
@@ -27,10 +32,9 @@ public class PlayerAttacking : MonoBehaviour
     {
         Plane aimPlane = new Plane(-Vector3.forward, transform.position);
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        float distance;
-
+        
         Vector3 aimPos = transform.position + transform.right;
-        if (aimPlane.Raycast(ray, out distance))
+        if (aimPlane.Raycast(ray, out float distance))
             aimPos = ray.GetPoint(distance);
 
         Vector2 aimDirection = new Vector2(aimPos.x - transform.position.x, aimPos.y - transform.position.y);

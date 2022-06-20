@@ -1,14 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LivingEntity : MonoBehaviour {
 
-    public GameObject shieldEffect;
-    public GameObject deathEffect;
-    
-    public int health;
-    public int shield;
+    [SerializeField] GameObject shieldEffect;
+    [SerializeField] GameObject deathEffect;
+
+    [SerializeField] int health;
+    [SerializeField] int shield;
+
+    public int GetShield()
+    {
+        return shield;
+    }
 
     public void TakeDamage(int damage)
     {
@@ -25,7 +28,7 @@ public class LivingEntity : MonoBehaviour {
             {
                 shield -= damage;
                 if (shieldEffect != null)
-                    shieldEffect.transform.localScale -= Vector3.one * 0.1f * damage / 10;
+                    shieldEffect.transform.localScale -= Vector3.one * (0.1f * damage) / 10;
             }
             
         }

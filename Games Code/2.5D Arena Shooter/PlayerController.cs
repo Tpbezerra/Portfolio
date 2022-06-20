@@ -6,24 +6,24 @@ using UnityEngine.UI;
 public class PlayerController : LivingEntity {
 
     string Name;
-    public Text nameTag;
+    [SerializeField] Text nameTag;
 
-    public GameObject groundPoundExplosion;
-    public Color characterColor;
+    [SerializeField] GameObject groundPoundExplosion;
+    [SerializeField] Color characterColor;
 
-    public LayerMask groundMask;
+    [SerializeField] LayerMask groundMask;
 
-    public float maxSpeed = 10;
-    public float accelerationTime = 0.2f;
-    public float decelerationTime = 0.2f;
-    public float jumpHeight = 6;
-    [Range(0, 1)] public float airControlPercent = 0.75f;
-    public float groundPoundCooldown = 2;
-    public float groundPoundRadius = 5;
-    public float groundPoundForce = 30;
-    public float dashRange = 7.5f;
-    public float dashSpeed = 50;
-    public float dashCooldown = 1.5f;
+    [SerializeField] float maxSpeed = 10;
+    [SerializeField] float accelerationTime = 0.2f;
+    [SerializeField] float decelerationTime = 0.2f;
+    [SerializeField] float jumpHeight = 6;
+    [Range(0, 1)] [SerializeField] float airControlPercent = 0.75f;
+    [SerializeField] float groundPoundCooldown = 2;
+    [SerializeField] float groundPoundRadius = 5;
+    [SerializeField] float groundPoundForce = 30;
+    [SerializeField] float dashRange = 7.5f;
+    [SerializeField] float dashSpeed = 50;
+    [SerializeField] float dashCooldown = 1.5f;
 
     float gravity = 9.82f * 2;
     float input;
@@ -36,8 +36,8 @@ public class PlayerController : LivingEntity {
     bool groundPound;
     bool isDashing;
 
-    public bool CanMove { get; set; }
-    public bool IsGrounded
+    bool CanMove { get; set; }
+    bool IsGrounded
     {
         get
         {
@@ -59,12 +59,14 @@ public class PlayerController : LivingEntity {
 
         if (GetComponent<Collider>())
         {
-            PhysicMaterial mat = new PhysicMaterial();
-            mat.bounciness = 0;
-            mat.bounceCombine = PhysicMaterialCombine.Minimum;
-            mat.dynamicFriction = 0;
-            mat.staticFriction = 0;
-            mat.frictionCombine = PhysicMaterialCombine.Minimum;
+            PhysicMaterial mat = new PhysicMaterial
+            {
+                bounciness = 0,
+                bounceCombine = PhysicMaterialCombine.Minimum,
+                dynamicFriction = 0,
+                staticFriction = 0,
+                frictionCombine = PhysicMaterialCombine.Minimum
+            };
 
             GetComponent<Collider>().material = mat;
         }
@@ -152,9 +154,7 @@ public class PlayerController : LivingEntity {
 
         if (IsGrounded)
         {
-            RaycastHit hit;
-
-            if (Physics.SphereCast(transform.position, (transform.localScale.x / 2) - 0.01f, -Vector3.up, out hit, 0.21f, groundMask, QueryTriggerInteraction.Ignore) && rb.velocity.y <= 0)
+            if (Physics.SphereCast(transform.position, (transform.localScale.x / 2) - 0.01f, -Vector3.up, out RaycastHit hit, 0.21f, groundMask, QueryTriggerInteraction.Ignore) && rb.velocity.y <= 0)
             {
                 Vector3 direction = new Vector3(hit.point.x, 0, hit.point.z) - new Vector3(transform.position.x, 0, transform.position.z);
 
@@ -164,7 +164,6 @@ public class PlayerController : LivingEntity {
 
                 if (fullDistance - difference > 0.0002f)
                     rb.velocity = new Vector3(rb.velocity.x, -(fullDistance - difference) / Time.fixedDeltaTime, rb.velocity.z);
-                //rb.position = Vector3.Lerp(rb.position, new Vector3(rb.position.x, rb.position.y - (fullDistance - difference), rb.position.z), maxSpeed * 3 * Time.fixedDeltaTime);
             }
 
             if (groundPound)
@@ -273,8 +272,7 @@ public class PlayerController : LivingEntity {
 
         float range = dashRange;
 
-        RaycastHit hit;
-        if (Physics.SphereCast(rb.position, transform.localScale.x / 2, directionToDash, out hit, dashRange))
+        if (Physics.SphereCast(rb.position, transform.localScale.x / 2, directionToDash, out RaycastHit hit, dashRange))
         {
             range = hit.distance;
             endPosition = rb.position + (directionToDash * range);
