@@ -1,11 +1,11 @@
 # 2.5D Arena Shooter
 
-This was created to be played with friends during my time in high school. I started it with another friend
+This was created to be played with friends during my time in high school. I started it with another collaborator
 but ended up being the only one who continued working on it. It was never finished as other parts of life and
 school got in the way.
 
-While it is not fit to be called a game (it has no win/lose conditions and no real threat) it shows of my approach
-in coding games.
+While it is not fit to be called a game (it has no win/lose conditions and no real threat) it shows my approach
+to coding games.
 
 A highligt of this game is the fact that the controller feels good to use and play with. It is snappy and responsive
 while not being janky. Mostly due to acceleration and deceleration being used as well as being able to change the
