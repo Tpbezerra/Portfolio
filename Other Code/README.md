@@ -1,78 +1,84 @@
 # Other
 
-This is the code for some programs that were for school assignments. They represent a variety of uses and were 
+These are some programmes that were for school assignments. They represent a variety of uses and were 
 written in 2 different languages: C# and C++. Unless disclosed, all code was written by me.
 
 ## Area Calculator (Oct - 2018)
 
-A tiny program where a user can input a few numbers in powershell and get the product of all of them. Alternatively 
+A tiny programme where a user can input a few numbers in powershell and get the product of all of them. Alternatively 
 (if the powerShell bool is false) the user can use the standard console interface to retrieve the product of two 
 numbers.
 
-## Chat Box (Nov - 2019)
+## Force Calculator Kinetic-Potential (Oct - 2018)
 
-A program that allows to users to connect to one-another over an internet connection and send messages using a 
-windows-forms application.
+Small console programme where a user can input what type of force they would want to calculate (kinetic or potential), 
+input the required parameters **(mass, velocity, height)** and receive the result.
 
-<img src="Chat Box (Nov - 2019)/Chat Box Display.png" width="480"/>
+## Table Calculator (Oct - 2018)
 
-## Connection - Client Test (Nov - 2019)
+Programme that displays the mathematical tables for a few low numbers. Which table is displayed (*, /, +, -) can be 
+changed by the user using a dropdown menu. What number it is applied to can be changed using another dropdown.
 
-A program to test client connection and a lead up to the **Chat Box** program.
+<img src="Table Calculator (Oct - 2018)/Table Calculator Display.png" width="256"/>
 
-## Connection - Server Test (Nov - 2019)
+## Force Calculator Particles (Nov - 2018)
 
-A program to test server creation and listening leading up to the **Chat Box** program.
+Small windows-forms programme that gives the electromagnetic force between two charged particles given the charge of 
+each and the distance between them.
 
-## Decision Tree Example (Nov - 2021)
+<img src="Force Calculator Particles (Nov - 2018)/Particle Force Display.png" width="256"/>
 
-This is a small code file that serves as a base for any decision tree I would want to implement. It was created as 
-part of an AI course and was then implemented into another bigger project.
+## Encryption programme (Sep - 2019)
 
-## Encryption Program (Sep - 2019)
-
-This was a program made during a programming competition for students all over the world (wherein I came top 50).
-The task for this program was to make an encryption/decryption program where the letters in the input-word would 
-"bounce around" a box. To then get the coded version of the word, the program would go from left to right, top to 
-bottom and create the word out of any letters it passed by. To decode a word, the program would bounce the letters 
+This was a programme made during a programming competition for students all over the world (wherein I came top 50).
+The task for this programme was to make an encryption/decryption programme where the letters in the input-word would 
+"bounce around" a box. To then get the coded version of the word, the programme would go from left to right, top to 
+bottom and create the word out of any letters it passed by. To decode a word, the programme would bounce the letters 
 arround like for it did when encrypting. This is to find which positions would be occupied. Then it would place the 
 letters from the coded word in each slot, in the same order as when encrypting (top left to bottom right). 
 Finally it would bounce through again, this time picking up letters as it went along. The result is the decoded 
 word. There was also letter replacement, each letter in the word would be replaced by the corresponding letter in 
 a replacement alphabet.
 
-<img src="Encryption Program (Sep - 2019)/Encryption Display.png" width="256"/>
+<img src="Encryption programme (Sep - 2019)/Encryption Display.png" width="256"/>
 
 Following the red line from the **T** shows the path that the word would take. The coded word would then be composed 
 of each letter in the order it arrived at them, starting from the top-left moving right and down. In this case the 
 result would be **"Thsoam"**.
 
-## Force Calculator Kinetic-Potential (Oct - 2018)
+## Text Analyser (Oct - 2019)
 
-Small console program where a user can input what type of force they would want to calculate (kinetic or potential), 
-input the required parameters **(mass, velocity, height)** and recieve the result.
+Opens a file and prints out the amount of lines, words, letters, characters and cases of "the".
 
-## Force Calculator Particles (Nov - 2018)
+## Chat Box (Nov - 2019)
 
-Small windows-forms program that gives the electromagnetic force between two charged particles given the charge of 
-each and the distance between them.
+A programme that allows to users to connect to one-another over an internet connection and send messages using a 
+windows-forms application.
 
-<img src="Force Calculator Particles (Nov - 2018)/Particle Force Display.png" width="256"/>
+<img src="Chat Box (Nov - 2019)/Chat Box Display.png" width="480"/>
 
-## Multithreading Example 1 - Music-Drawing (Jun - 2021)
+## Connection - Client Test (Nov - 2019)
+
+A programme to test client connection and a lead up to the **Chat Box** programme.
+
+## Connection - Server Test (Nov - 2019)
+
+A programme to test server creation and listening leading up to the **Chat Box** programme.
+
+## Multithreading Example 1 - Music-Drawing (Apr - 2021)
 
 **DISCLOSER**: The Windows-Forms UI was not made by me.
 
-This was the first multithreading assignment. We were tasked with creating a program that could draw text that 
+This was the first multithreading assignment. We were tasked with creating a programme that could draw text that 
 teleported around a panel, draw a spinning triangle, and play music. Each on its own thread.
 
-<img src="Multithreading Example 1 - Music-Drawing (Jun - 2021)/Multithreaded Example 1 Display.png" width="480"/>
+<img src="Multithreading Example 1 - Music-Drawing (Apr - 2021)/Multithreaded Example 1 Display.png" width="480"/>
 
 ## Multithreading Example 2 - String Transfer (Apr - 2021)
 
 **DISCLOSER**: The Windows-Forms UI was not made by me.
 
-The second multithreading assignment was to create a program that could write and read a string on two separate 
+The second multithreading assignment was to create a programme that could write and read a string on two separate 
 threads. We synced the two threads so that the reader could only read once the writer had written something new, 
 and the writer would only write when the reader had finished reading. To compare, there is an option to do it 
 without sync.
@@ -83,7 +89,7 @@ without sync.
 
 **DISCLOSER**: The Windows-Forms UI was not made by me.
 
-This third assignment was to create a program where producers were producing different items (the examples are 
+This third assignment was to create a programme where producers were producing different items (the examples are 
 foodstuffs) and placing them in storage. At the same time consumers were taking the produced items out of storage. 
 Each producer and each consumer was to run on its own thread and they use semaphores to sync up the placement, 
 respectively removal, of items.
@@ -102,7 +108,7 @@ check if the word at the modify position was a word to be replaced. Finally the 
 read position in the buffer and add it to the output window.
 
 Because these actions (writing, modifying, reading) take place on separate threads, they risk running "out of 
-order". To prevent this they will only continue if the elemnt at their respective buffer position lives up to their 
+order". To prevent this they will only continue if the element at their respective buffer position lives up to their 
 expected criteria. The writer will only write if the reader has read from it, the reader will only read if the 
 modifier has checked it and the modifier will only check if it has a newly written word.
 
@@ -116,26 +122,6 @@ These rules are enforced by the use of a **Monitor**.
 
 This project was to create a registry of people where one could add, remove, search for, empty, and print out 
 the registry.
-
-## Quoridor AI (Oct - 2021)
-
-This was a project where we were tasked with creating an AI-player that could play and, given the right conditions, 
-win a game of **Quoridor**. The code included was all written by me, on its own, however, it wont play the game. 
-This code was applied onto other code created by **Olle Lindeberg** that ran the game itself. This code would then 
-play the game.
-
-It works by creating a graph representing the game-board where nodes are the tiles that a player can move on and 
-the edges between them represent where a player can get to from any one node. The program then checks for the 
-shortest path to its destination as well as the opponent's shortest path. If the program has walls remaining and 
-the opponent is closer to their destination than the program, consider placing a wall. When placing a wall, go 
-through the nodes in the opponent's path and check how much a wall placed there would impact them, compared to 
-itself. Once all nodes have been checked, make sure that the impact on the opponent is greater than the impact on 
-iteslf. If it is, place a wall at whatever position was found to have the greatest impact. If it is not, don't 
-place a wall.
-
-If the program placed a wall, that is the end of its turn. If it didn't (because it is closer than the opponent, or 
-because it has no walls left, or because the impact of a wall would be greater on itself), move. When moving, all 
-it does is get the next node in the path and move to it.
 
 ## Sorting Testing (Sep - 2021)
 
@@ -157,19 +143,33 @@ The three variants were: substituting strings in another string, substituting ch
 and replacing strings from an input stream. The method "**listPrimes**" is separate and is used to list all of 
 the primes up to the input int.
 
-## Table Calculator (Oct - 2018)
-
-Program that displays the mathematic tables for a few low numbers. Which table is displayed (*, /, +, -) can be 
-changed by the user using a dropdown menu. What number it is applied to can be changed using another dropdown.
-
-<img src="Table Calculator (Oct - 2018)/Table Calculator Display.png" width="256"/>
-
-## Text Analyser (Oct - 2019)
-
-Opens a file and prints out the amount of lines, words, letters, characters and cases of "the".
-
 ## Txt Code Parser (Oct - 2021)
 
-This is a parser that takes 'code' from a file and parses them to output correct text to the console. I can handle 
+This is a parser that takes 'code' from a file and parses them to output correct text to the console. It can handle 
 simple mathematics and can output in **decimal**, **hexadecimal**, and **binary**. Finally it can create variables 
 with attached values.
+
+## Quoridor AI (Oct - 2021)
+
+This was a project where we were tasked with creating an AI-player that could play and, given the right conditions, 
+win a game of **Quoridor**. The code included was all written by me, on its own, however, it wont play the game. 
+This code was applied onto other code created by **Olle Lindeberg** that ran the game itself. This code would then 
+play the game.
+
+It works by creating a graph representing the game-board where nodes are the tiles that a player can move on and 
+the edges between them represent where a player can get to from any one node. The programme then checks for the 
+shortest path to its destination as well as the opponent's shortest path. If the programme has walls remaining and 
+the opponent is closer to their destination than the programme, consider placing a wall. When placing a wall, go 
+through the nodes in the opponent's path and check how much a wall placed there would impact them, compared to 
+itself. Once all nodes have been checked, make sure that the impact on the opponent is greater than the impact on 
+itself. If it is, place a wall at whatever position was found to have the greatest impact. If it is not, don't 
+place a wall.
+
+If the programme placed a wall, that is the end of its turn. If it didn't (because it is closer than the opponent, or 
+because it has no walls left, or because the impact of a wall would be greater on itself), move. When moving, all 
+it does is get the next node in the path and move to it.
+
+## Decision Tree Base (Nov - 2021)
+
+This is a small code file that serves as a base for any decision tree I would want to implement. It was created as 
+part of an AI course and was then implemented into another bigger project.
