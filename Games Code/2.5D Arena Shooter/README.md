@@ -1,6 +1,6 @@
 # 2.5D Arena Shooter
 
-This was created to be played with friends during my time in high school. I started it with another collaborator
+This was created to be played with friends during my time in gymnasiet. I started it with another collaborator
 but ended up being the only one who continued working on it. It was never finished as other parts of life and
 school got in the way.
 
